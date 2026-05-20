@@ -28,7 +28,6 @@
 body {
   font-family: "Hanken Grotesk", sans-serif;
   background-color: var(--bg);
-  font-size: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -36,11 +35,10 @@ body {
 }
 
 .container {
-  width: 750px;
+  max-width: 750px;
   display: grid;
   place-content: center;
   grid-template-columns: repeat(2, 1fr);
-  background-color: var(--White);
   border-radius: 21px;
 }
 
@@ -81,7 +79,7 @@ h1 {
 }
 
 .result-score p {
-   font-size: 1rem;
+   font-size: 1.1rem;
    font-weight: 800;
 
 }
@@ -96,6 +94,7 @@ h1 {
    color: var(--result-main);
    text-align: center;
    width: 80%;
+   font-size: 1.1rem;
 }
 
 /* Summary Card */
@@ -126,6 +125,7 @@ h1 {
    justify-content: space-between;
    padding: .8rem 0.6rem;
    border-radius: 10px;
+   font-size: 1.1rem;
 }
 
 .img-container {    
@@ -179,6 +179,14 @@ h1 {
    border-radius: 2rem;
    margin-top: 1rem;
    cursor: pointer;
+}
+
+.continue-btn:hover {
+    transform: scale(1.025);
+}
+
+.continue-btn:focus {
+    border: 4px dotted white;
 }
 
 .continue-btn:active {
